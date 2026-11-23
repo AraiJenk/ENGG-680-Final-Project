@@ -6,4 +6,4 @@ We propose using the open-source HAM10000 dataset, which contains 10,015 dermato
 
 The project applies biomedical image processing and machine learning to a practical engineering challenge: designing a transparent, testable decision-support workflow for medical images. Its output will be an evaluated research prototype, not a diagnostic tool.
 
-**Dataset proposed:** [HAM10000 in the ISIC Archive](https://api.isic-archive.com/collections/212/). Confirm the group's chosen dataset and binary label policy before submission.
+**Dataset:** [HAM10000 in the ISIC Archive](https://api.isic-archive.com/collections/212/). 
