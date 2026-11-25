@@ -2,9 +2,11 @@
 
 Course project: **Developing a Machine Learning Approach for Benign and Malignant Skin Lesion Classification using Dermatoscopic Imaging**.
 
-The half-page project draft is in [docs/project-summary.md](docs/project-summary.md). The course submission also requires the group contract as page 1 and the title/summary as page 2 in one PDF.
+This project investigates the use of deep learning for binary classification of dermatoscopic skin lesion images, with a focus on malignant lesion detection, probability calibration and confidence-based referral for expert review. 
 
-## Proposed data and approach
+An ImageNet-pretrained ResNet-18 CNN was fine tuned using the HAM 10000 dataset. Temperature scaling was applied to improve predicted probability reliability, followed by confidence based referral strategy to identify images requiring expert review. 
+
+## Data and approach
 
 - Dataset: [HAM10000 / ISIC Archive](https://api.isic-archive.com/collections/212/)
 - Task: binary lesion classification. Define class mappings and exclusions in `docs/label-policy.md` before analysis.
@@ -16,7 +18,7 @@ The half-page project draft is in [docs/project-summary.md](docs/project-summary
 
 | Path | Purpose |
 | --- | --- |
-| `docs/` | Project summary, dataset and label decisions |
+| `docs/` | Project summary, dataset use and label decisions |
 | `data/raw/` | Downloaded source images and labels (ignored by Git) |
 | `data/processed/` | Processed inputs (ignored by Git) |
 | `notebooks/` | Exploratory work |
@@ -24,12 +26,3 @@ The half-page project draft is in [docs/project-summary.md](docs/project-summary
 | `models/` | Model weights (ignored by Git) |
 | `results/` | Figures and metric tables |
 | `tests/` | Checks for data integrity and splits |
-
-## Next steps
-
-1. Confirm the dataset and binary label mapping with the group.
-2. Record provenance and license terms in `docs/dataset.md`; download images into `data/raw/`.
-3. Make grouped train/validation/test splits and record class counts.
-4. Train a baseline, then compare a pretrained image model on the same held-out test set.
-
-No downloaded dataset or fitted model is included here.
