@@ -29,7 +29,13 @@ This project uses HAM10000 dataset, containing 10,015 dermatoscopic images acros
 - Statistical evaluation: Lesion-level bootstrapping, Wilson confidence intervals. 
 - Model Evaluation: lesion-grouped splits; malignant sensitivity, specificity, precision, F1, ROC-AUC, and confusion matrix.
 
-## Layout Location of relevant info
+## Packages and technologies used: 
+- Enviornment: Python, Google Colab, Google drive
+- Machine Learning: PyTorch, Torchvision, scikit-learn
+- Preprocessing: pandas, NumPy, Pillow
+- Visualization: Matplotlib
+
+## Layout & Location of relevant info
 
 | Path | Purpose |
 | --- | --- |
